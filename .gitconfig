@@ -1,0 +1,10 @@
+[user]
+	name = Neil Weisenfeld
+	email = neil@10xgenomics.com
+[alias]
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --color --graph --decorate --abbrev-commit --all --pretty=format:'%C(yellow)%d%Creset %h %s (%cE)'
+	st = status
+	save = "!f() { ver=`git log -1 --format='%h'`; cp lib/assembly/bin/$1 lib/assembly/bin_farm/${1}.$ver; echo bin_farm/$1.$ver; }; f"
+	addnw = !git diff -U0 -w --no-color | git apply --cached --ignore-whitespace --unidiff-zero -
+	su = submodule update --recursive --init

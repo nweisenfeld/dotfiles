@@ -1,6 +1,6 @@
 [user]
 	name = Neil Weisenfeld
-	email = neil@10xgenomics.com
+	email = weisen123@gmail.com
 [alias]
         lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --color --graph --decorate --abbrev-commit --all --pretty=format:'%C(yellow)%d%Creset %h %s (%cE)'

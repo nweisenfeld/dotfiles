@@ -8,3 +8,5 @@
 	save = "!f() { ver=`git log -1 --format='%h'`; cp lib/assembly/bin/$1 lib/assembly/bin_farm/${1}.$ver; echo bin_farm/$1.$ver; }; f"
 	addnw = !git diff -U0 -w --no-color | git apply --cached --ignore-whitespace --unidiff-zero -
 	su = submodule update --recursive --init
+[push]
+	default = simple

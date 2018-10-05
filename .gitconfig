@@ -10,3 +10,6 @@
 	su = submodule update --recursive --init
 [push]
 	default = simple
+
+[includeIf "gitdir:~/.home.git"]
+	path = .gitconfig.home
